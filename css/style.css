@@ -52,3 +52,27 @@ body {
 .buttons-container {
   background: lightcyan;
 }
+
+@media (width < 650px) {
+  body {
+    background-color: red;
+  }
+
+  .form {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.7fr 0.1fr;
+  }
+  .sidebar {
+    grid-row: unset;
+  }
+
+  .main-content {
+    border-radius: 1rem;
+    margin: 5rem 2rem;
+    margin-top: -5rem;
+  }
+}
